@@ -1,0 +1,53 @@
+.home-nav {
+   
+    nav {
+        background: #E6E6E6;
+        height: auto;
+    
+        path {
+            fill: #00d600;
+        }
+        #nav {
+            min-height: 85px;
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            background: #e6e6e6;
+            a {
+                width: 100%;
+                padding: 1.25rem;
+                margin-right: 0rem;
+                display: block;
+            }
+    
+            .active {
+                color: #fff;
+                background: rgb(58,58,58);
+                background: linear-gradient(0deg, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 100%);
+            }
+        }   
+    }
+    }
+    
+    
+    @media screen and (min-width: 767px) {
+        .home-nav {
+        
+    
+        nav {
+    
+            #nav {
+                flex-direction: row;
+                position: relative;
+                align-items: center;
+                a {
+                    display: flex;
+                    width: auto;
+                    padding: 0 2rem;
+                    margin-right: 2rem;
+                }
+                
+            }
+        }
+    }
+    }

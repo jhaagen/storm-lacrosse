@@ -1,0 +1,10 @@
+.banner {
+    background: url('./../../public/assets/banner-background.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+
+    .logo {
+        padding: 25px;
+    }
+}
