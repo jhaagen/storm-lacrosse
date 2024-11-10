@@ -15,7 +15,7 @@ function Schedule() {
             <h2>Winter Training Schedule</h2>
             <p>Sunday Mornings January - March <br/>
               At the Plex South </p>
-            <h2>Spring 20205 Games</h2>
+            <h2>Spring 2025 Games</h2>
             <p>Schedule Coming Soon!!
 
             </p>
