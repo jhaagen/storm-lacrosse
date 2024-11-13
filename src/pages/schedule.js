@@ -13,10 +13,10 @@ function Schedule() {
 
         <div className='container'> 
             <h2>Winter Training Schedule</h2>
-            <p>Sunday Mornings January - March <br/>
+            <p>Sunday Mornings | 10:00am - 12:00pm | January 19th - The End of March <br/>
               At the Plex South </p>
             <h2>Spring 2025 Games</h2>
-            <p>Schedule Coming Soon!!
+            <p>Game Schedule Coming Soon!!
 
             </p>
         </div>
