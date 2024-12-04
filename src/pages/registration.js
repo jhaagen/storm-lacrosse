@@ -28,7 +28,7 @@ function Registration() {
             </ul>            
             <br />
             <h2>Cost</h2>
-              <p>The cost for the spring season this year will be $550 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 12 spring games.</p>
+              <p>The cost for the spring season this year will be $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 12 spring games.</p>
               <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
               <br/>
               <img src="./assets/usa-lacrosse.png" alt="USA Lacrosse Logo" />
