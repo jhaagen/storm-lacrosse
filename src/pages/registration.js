@@ -20,15 +20,18 @@ function Registration() {
               <li>Registration: <a href="https://forms.gle/uf7mfocgNuraoQJP6">Registration Form</a>
                 </li>
                 <li>
-                Medical : <a href="https://forms.gle/gTaAvL9SwX6RNHpQ9">Medical Release Form</a>
+                Medical: <a href="https://forms.gle/gTaAvL9SwX6RNHpQ9">Medical Release Form</a>
                 </li>
                 <li>
                 Gear rental: <a href="https://forms.gle/gTjwK8yaHomF6zq87">Gear Rental Form</a>
                 </li>
             </ul>            
-
+            <br />
             <h2>Cost</h2>
-              <p>The cost for the spring season this year will be $550 per child. This includes winter training (January - March), outdoor practices, and around 12 spring games.</p>
+              <p>The cost for the spring season this year will be $550 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 12 spring games.</p>
+              <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
+              <br/>
+              <img src="./assets/usa-lacrosse.png" alt="USA Lacrosse Logo" />
             <h2>Expectations</h2>
             <p>We hold our athletes to a high standard, while we understand all kids are at different levels, we will work together to ensure we are the best team possible.</p>
             <CTA>
