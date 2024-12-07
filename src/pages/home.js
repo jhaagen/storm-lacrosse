@@ -25,7 +25,7 @@ function Home() {
             <p>
             Whether you're a seasoned player or just starting out, the Fort Wayne Storm is the perfect place to take your lacrosse game to the next level. Join us and become part of a team that is dedicated to excellence, sportsmanship, and the joy of the game.</p>
             </div>
-            <img src="./assets/storm-game.jpg" alt="2024 Storm Game photo" />
+            <img src="./assets/storm-game.jpg" alt="2024 Storm Game Action" />
            
         </div>
         <div className='container short'><CTA></CTA></div>
