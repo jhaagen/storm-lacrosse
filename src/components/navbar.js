@@ -66,6 +66,9 @@ function Navbar() {
           </NavLink>
           <NavLink to='/area-teams' >
             Area Teams
+          </NavLink>
+          <NavLink to='/contact' >
+            Contact
           </NavLink>          
         </NavMenu>
       </Nav>

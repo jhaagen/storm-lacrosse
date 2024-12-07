@@ -7,6 +7,7 @@ import Registration from './pages/registration';
 import Schedule from './pages/schedule';
 import Equipment from './pages/equipment';
 import AreaTeams from './pages/area-teams';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path='/schedule' element={<Schedule />} />
         <Route path='/equipment' element={<Equipment />} />
         <Route path='/area-teams' element={<AreaTeams />} />
-
+        <Route path='/contact' element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
         </Routes>
 

@@ -1,13 +1,13 @@
 .cta {
 
-    padding: 20px 0;
+    background: lime;
+    padding: 40px;
 
     a {
-        background: lightblue;
-        border: #666;
+        background-color: rgba(0,0,255, .5);
+        color: #fff;
         padding: 10px 15px;
         border-radius: 5px;
-        color: #000;
         text-decoration: none;
         cursor: pointer;
         transition: 0.5s ease all;

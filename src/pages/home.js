@@ -12,8 +12,8 @@ function Home() {
         </header>
         <Navbar></Navbar>
 
-        <div className='container'> 
-            <h2>Who is Storm</h2>
+        <div className='container home'> 
+            <div><h2>Who is Storm</h2>
             <p>The Fort Wayne Storm is a youth lacrosse program dedicated to fostering a love for the sport and developing the skills of young athletes in grades 3-8. Our team is committed to providing a positive and supportive environment where players can learn, grow, and have fun.
             </p>
             <p>
@@ -24,9 +24,12 @@ function Home() {
             </p>
             <p>
             Whether you're a seasoned player or just starting out, the Fort Wayne Storm is the perfect place to take your lacrosse game to the next level. Join us and become part of a team that is dedicated to excellence, sportsmanship, and the joy of the game.</p>
-            
-            <CTA></CTA>
+            </div>
+            <img src="./assets/storm-game.jpg" alt="2024 Storm Game photo" />
+           
         </div>
+        <div className='container short'><CTA></CTA></div>
+ 
       </div>
         )
     }
