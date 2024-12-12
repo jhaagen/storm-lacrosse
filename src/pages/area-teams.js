@@ -24,7 +24,7 @@ function AreaTeams() {
             <p></p>
             <h3><a href="https://athletics.bishopdwenger.com/lacrosse">Bishop Dwenger High School</a></h3>
             <p></p>
-            <h3><a href="https://www.clhscadets.com/apps/pages/lacrosse">Confordia Lutheran High School</a></h3>
+            <h3><a href="https://www.clhscadets.com/apps/pages/lacrosse">Concordia Lutheran High School</a></h3>
             <p></p>
            <h3><a href="https://trinethunder.com/sports/mens-lacrosse">Trine University</a></h3>
            <p></p>
