@@ -90,6 +90,8 @@ footer {
     align-items: flex-start;
     img {
         padding: 25px;
+        max-width: 85vw;
+        margin: 0 auto;
     }
 }
 
@@ -137,6 +139,7 @@ footer {
 
     .home {
         flex-direction: row;
+        width: 100%;
     }
 
 }
