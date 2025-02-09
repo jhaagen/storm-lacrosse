@@ -11,7 +11,7 @@ root.render(
       <footer>
         <div className='footer-contact'><h2>Contact Us</h2>
         <p><a href="mailto:fwstormlacrosse@outlook.com">Email us</a><br/>
-        <a href='facebook'>Find us on Facebook</a></p>
+        <a href='https://www.facebook.com/fortwaynestormlacrosse' target='_blank'>Find us on Facebook</a></p>
         </div>
         <p>Copyright &copy; 2024 Storm | Fort Wayne Boys Lacrosse. All Rights Reserved.</p>
       </footer>
