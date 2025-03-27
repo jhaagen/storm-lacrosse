@@ -1,18 +1,10 @@
 import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
-import { Helmet } from 'react-helmet-async';
-import { SEO } from '../App';
 
 function Schedule() {
     return (
       <div className='App'>
-        <Helmet>
-          <SEO 
-            title="Schedule"
-            description="View the Fort Wayne Storm lacrosse team's winter training schedule, spring training schedule, and upcoming games for the 2025 season."
-          />
-        </Helmet>
         <header>
           <Banner></Banner>
         </header>

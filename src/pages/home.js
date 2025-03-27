@@ -2,18 +2,10 @@ import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
 import CTA from '../components/cta';
-import { Helmet } from 'react-helmet-async';
-import { SEO } from '../App';
 
 function Home() {
     return (
       <div className='App'>
-        <Helmet>
-          <SEO 
-            title="Home"
-            description="The Fort Wayne Storm is a youth lacrosse program dedicated to fostering a love for the sport and developing the skills of young athletes in grades 3-8."
-          />
-        </Helmet>
         <header>
           <Banner></Banner>
         </header>

@@ -2,18 +2,10 @@ import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
 import CTA from '../components/cta';
-import { Helmet } from 'react-helmet-async';
-import { SEO } from '../App';
 
 function Registration() {
     return (
       <div className='App'>
-        <Helmet>
-          <SEO 
-            title="Registration"
-            description="Register for the Fort Wayne Storm lacrosse team's 2025 spring season. Open for 10U, 12U, and 14U teams. Includes winter training and spring games."
-          />
-        </Helmet>
         <header>
           <Banner></Banner>
         </header>
