@@ -1,11 +1,18 @@
 import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
+import { Helmet } from 'react-helmet-async';
+import { SEO } from '../App';
 
 function Contact() {
     return (
-  
       <div className='App'>
+        <Helmet>
+          <SEO 
+            title="Contact"
+            description="Get in touch with the Fort Wayne Storm lacrosse team. Contact our staff including Program Coordinator, Director of Coaching, and team coaches."
+          />
+        </Helmet>
         <header>
           <Banner></Banner>
         </header>

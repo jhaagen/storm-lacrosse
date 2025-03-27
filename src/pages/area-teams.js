@@ -1,11 +1,18 @@
 import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
+import { Helmet } from 'react-helmet-async';
+import { SEO } from '../App';
 
 function AreaTeams() {
     return (
-  
       <div className='App'>
+        <Helmet>
+          <SEO 
+            title="Area Teams"
+            description="Explore high school lacrosse teams in the Fort Wayne area, including Homestead, Leo, Carroll, Snider, Bishop Dwenger, and more."
+          />
+        </Helmet>
         <header>
           <Banner></Banner>
         </header>

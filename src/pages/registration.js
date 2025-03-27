@@ -2,11 +2,18 @@ import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
 import CTA from '../components/cta';
+import { Helmet } from 'react-helmet-async';
+import { SEO } from '../App';
 
 function Registration() {
     return (
-  
       <div className='App'>
+        <Helmet>
+          <SEO 
+            title="Registration"
+            description="Register for the Fort Wayne Storm lacrosse team's 2025 spring season. Open for 10U, 12U, and 14U teams. Includes winter training and spring games."
+          />
+        </Helmet>
         <header>
           <Banner></Banner>
         </header>
@@ -28,7 +35,13 @@ function Registration() {
               <p>The cost for the spring season this year will be $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
               <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
               <br/>
-              <img src="./assets/usa-lacrosse.png" alt="USA Lacrosse Logo" />
+              <img 
+                src="./assets/usa-lacrosse.png" 
+                alt="USA Lacrosse Membership Logo" 
+                loading="lazy"
+                width="200"
+                height="100"
+              />
 
                           
             <h2>Team Birthdate Ranges</h2>

@@ -2,11 +2,18 @@ import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
 import CTA from '../components/cta';
+import { Helmet } from 'react-helmet-async';
+import { SEO } from '../App';
 
 function Equipment() {
     return (
-  
       <div className='App'>
+        <Helmet>
+          <SEO 
+            title="Equipment"
+            description="Learn about required lacrosse equipment for the Fort Wayne Storm team, including helmets, pads, gloves, and more. We offer equipment borrowing for new players."
+          />
+        </Helmet>
         <header>
           <Banner></Banner>
         </header>
