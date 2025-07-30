@@ -4,9 +4,9 @@ import './cta.scss';
 function CTA() {
 return (
 <div className="cta">
-<h2>Summer Lacrosse - PSM Lacrosse</h2>
-            <p>PSM is offering a middle school instructional league. June 10th - July 24th. More information available at the website linked below.<br/><br/>
-                <a href="https://bondsports.co/activity/programs/CO_ED-adult-OTHER/6755/season/PSM%20Middle%20School%20Instructional%20League/65546">Visit PSM's website</a></p>
+<h2>Fall Clinic - Sundays Skills &amp; Scrimmages</h2>
+            <p>Get ready for the Fall Lacrosse Clinic! Boys in grades 3-8 can join us for skills and scrimmages on Sundays from 12:30 PM to 2:00 PM, starting September 7th through October 5th, at the fields next to Perry Hill Elementary for just $75. Register with the link below or by emailing fwstormlacrosse@outlook.com and paying via Venmo or Zelle.<br/><br/>
+                <a href="https://forms.gle/aiQ5vWxnKRtMwYZr7">Register Today!</a></p>
             </div>
 
 );
