@@ -12,8 +12,9 @@ function Registration() {
         <Navbar></Navbar>
 
         <div className='container'> 
-            <h2>Spring 2025 Registration</h2>
-            <p>Registration is open for the 2025 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
+            <h2>Spring 2026 Registration</h2>
+            <p>Registration will open in December 2025 for the Spring 2026 season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
+            {/* <p>Registration is open for the 2025 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
             <p>To register please fill out the Registration form, as well as the Medical form.</p>
             <ul>
               <li>Registration: <a className='button' href="https://forms.gle/uf7mfocgNuraoQJP6">Registration Form</a>
@@ -21,10 +22,10 @@ function Registration() {
                 <li>
                 Medical: <a className='button' href="https://forms.gle/gTaAvL9SwX6RNHpQ9">Medical Release Form</a>
                 </li>
-            </ul>            
+            </ul>             */}
             <br />
             <h2>Cost</h2>
-              <p>The cost for the spring season this year will be $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
+              <p>The anticipated cost for the spring season this year will be around $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
               <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
               <br/>
               <img 
@@ -38,11 +39,11 @@ function Registration() {
                           
             <h2>Team Birthdate Ranges</h2>
             <p>
-            10U (birthdates 9/1/14 - 8/31/16)
+            10U (birthdates 9/1/15 - 8/31/17)
             <br /><br />
-            12U (birthdays 9/1/12 - 8/31/14)
+            12U (birthdays 9/1/13 - 8/31/15)
             <br /><br />
-            14U (birthdates 9/1/10 - 8/31/12)
+            14U (birthdates 9/1/11 - 8/31/13)
             <br />[through 8th grade]
             </p>
             <h2>Expectations</h2>
