@@ -14,9 +14,9 @@ function Schedule() {
           <div className='columns'>
             <div className='column'>
             <h2>Winter Training Schedule</h2>
-            <p>Sunday Mornings <br />10:00am - 12:00pm <br />January 19th - March 23rd <br/>
-              At the Plex South (<a href="https://maps.app.goo.gl/dvChNBit198ghRUf6" aria-label="Plex South Map">map</a>) </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4356.765437802453!2d-85.21972162289748!3d41.047365971345044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816070011c9ced7%3A0x28aaee4e8e9abe2f!2sThe%20Plex%20south!5e1!3m2!1sen!2sus!4v1733604252505!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Plex South"></iframe>
+            <p>Sunday Mornings <br />8:00am - 10:00pm <br />January 11th - End of March<br/>
+              At PSM Empowered (<a href="https://maps.app.goo.gl/fTatdYHzMGEiv4Az7" aria-label="PSM Empowered">map</a>) </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.011948370305!2d-85.16902202405102!3d41.195753307860066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8815e375e367880f%3A0x8c2de7590d02399e!2sPSM%20Empowered!5e1!3m2!1sen!2sus!4v1761570952453!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PSM Empowered"></iframe>
             </div>
 
             <div className='column'>
@@ -29,9 +29,10 @@ function Schedule() {
             
             <div className='centered'>
               <br /> <br />
-            <h2>Spring 2025 Games</h2>
-            <p>
-              <table className="schedule-table">
+            <h2>Spring 2026 Games</h2>
+            
+              <h3>Schedule Coming soon!</h3>
+              {/* <table className="schedule-table">
                 <tr>
                   <th>Date</th>
                   <th>Time</th>
@@ -86,9 +87,9 @@ function Schedule() {
                   <td>TBD</td>
                   <td>Fishers, IN</td>
                 </tr>
-              </table>
+              </table> */}
 
-            </p>
+            
             </div>
         </div>
       </div>
