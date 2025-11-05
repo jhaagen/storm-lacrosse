@@ -4,9 +4,10 @@ import './cta.scss';
 function CTA() {
 return (
 <div className="cta">
-{/* <h2>Fall Clinic - Sundays Skills &amp; Scrimmages</h2>
-            <p>Get ready for the Fall Lacrosse Clinic! Boys in grades 3-8 can join us for skills and scrimmages on Sundays from 12:30 PM to 2:00 PM, starting September 7th through October 5th, at the fields next to Perry Hill Elementary for just $75. Register with the link below or by emailing fwstormlacrosse@outlook.com and paying via Venmo or Zelle.<br/><br/>
-                <a href="https://forms.gle/aiQ5vWxnKRtMwYZr7">Register Today!</a></p> */}
+ <h2>Spring Call Out Meeting</h2>
+            <p>We will be having a call out meeting on Thursday, December 4th from 5:45pm to 7:30pm at PSM Empowered. We will be discussing the upcoming season and answering any questions you may have.<br/><br/>
+            Feel free to stop by meet the coaches and ask any questions you may have.
+                </p>
             </div>
 
 );
