@@ -13,16 +13,15 @@ function Registration() {
 
         <div className='container'> 
             <h2>Spring 2026 Registration</h2>
-            <p>Registration will open in December 2025 for the Spring 2026 season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
-            {/* <p>Registration is open for the 2025 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
+            <p>Registration is open for the 2025 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
             <p>To register please fill out the Registration form, as well as the Medical form.</p>
             <ul>
-              <li>Registration: <a className='button' href="https://forms.gle/uf7mfocgNuraoQJP6">Registration Form</a>
+              <li>Registration: <a className='button' href="https://forms.gle/gdxw3DeTxmeZjrQz5">Registration Form</a>
                 </li>
                 <li>
-                Medical: <a className='button' href="https://forms.gle/gTaAvL9SwX6RNHpQ9">Medical Release Form</a>
+                Medical: <a className='button' href="https://forms.gle/RiJTtcmatBSCLTzn9">Medical Release Form</a>
                 </li>
-            </ul>             */}
+            </ul>            
             <br />
             <h2>Cost</h2>
               <p>The anticipated cost for the spring season this year will be around $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
