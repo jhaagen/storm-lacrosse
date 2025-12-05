@@ -4,10 +4,9 @@ import './cta.scss';
 function CTA() {
 return (
 <div className="cta">
- <h2>Spring Call Out Meeting</h2>
-            <p>We will be having a call out meeting on Thursday, December 4th from 5:45pm to 7:30pm at PSM Empowered. We will be discussing the upcoming season and answering any questions you may have.<br/><br/>
-            Feel free to stop by meet the coaches and ask any questions you may have.
-                </p>
+ <h2>Spring Registration is Open</h2>
+            <p>Registration is open for the 2026 spring season. Please fill out the registration form and the medical form to secure your spot on the team. </p>
+            <p><a href="/registration">Register Now</a></p>
             </div>
 
 );
