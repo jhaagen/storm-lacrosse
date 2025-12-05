@@ -13,7 +13,7 @@ function Registration() {
 
         <div className='container'> 
             <h2>Spring 2026 Registration</h2>
-            <p>Registration is open for the 2025 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
+            <p>Registration is open for the 2026 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
             <p>To register please fill out the Registration form, as well as the Medical form.</p>
             <ul>
               <li>Registration: <a className='button' href="https://forms.gle/gdxw3DeTxmeZjrQz5">Registration Form</a>
@@ -24,7 +24,7 @@ function Registration() {
             </ul>            
             <br />
             <h2>Cost</h2>
-              <p>The anticipated cost for the spring season this year will be around $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
+              <p>The anticipated cost for the spring season this year will be $350 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
               <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
               <br/>
               <img 
