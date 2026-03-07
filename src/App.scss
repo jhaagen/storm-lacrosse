@@ -104,6 +104,92 @@ footer {
     }
 }
 
+.schedule-section {
+    margin-top: 2rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.schedule-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.schedule-card {
+    background: rgba(0, 214, 0, 0.06);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #00d600;
+
+    &__date {
+        margin: 0 0 0.35em;
+        padding-top: 0;
+        font-size: 1.15rem;
+        color: #154d14;
+    }
+
+    &__location {
+        margin: 0 0 0.75rem;
+        font-size: 0.9rem;
+        color: #154d14;
+        opacity: 0.9;
+    }
+
+    &__note {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #154d14;
+    }
+
+    &__games {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    &__division {
+        ul {
+            margin: 0.25em 0 0 1rem;
+            padding: 0;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 0.2em;
+            font-size: 0.9rem;
+            color: #154d14;
+        }
+    }
+
+    &__division-label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #00d600;
+    }
+
+    &:last-child {
+        grid-column: 1 / -1;
+        background: rgba(0, 214, 0, 0.12);
+        border-left-color: lime;
+        text-align: center;
+
+        .schedule-card__date {
+            color: #154d14;
+        }
+        .schedule-card__note {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+    }
+}
+
 .contact {
     h2 {
         padding: 30px 0;
@@ -123,7 +209,14 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px) { 
+@media screen and (min-width: 767px) {
+    .schedule-cards {
+        max-width: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
     .container {
         margin: 0 auto;
         width: 90%;
@@ -154,9 +247,14 @@ footer {
 }
 
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
     .container {
         max-width: 1180px;
     }
 
+    .schedule-cards {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

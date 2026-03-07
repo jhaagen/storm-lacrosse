@@ -2,98 +2,111 @@ import React from 'react';
 import Banner from '../components/banner';
 import Navbar from '../components/navbar';
 
+const SPRING_2026_SCHEDULE = [
+  {
+    date: 'April 12',
+    location: 'Brownsburg (Bulldog Blvd)',
+    games: {
+      '12u': ['11am Brownsburg vs Storm', '12pm Storm vs Bloomington'],
+      '14u': ['2pm Storm vs Brownsburg', '3pm Storm vs Bloomington'],
+    },
+  },
+  {
+    date: 'April 18',
+    location: 'Van Hoozen (Fort Wayne)',
+    games: {
+      '12u': ['12pm Storm vs Heritage Christian', '1pm Noblesville vs Heritage Christian', '2pm Storm vs Noblesville'],
+      '14u': ['12pm Storm vs Heritage Christian', '1pm Heritage Christian vs Noblesville', '2pm Storm vs Noblesville'],
+    },
+  },
+  {
+    date: 'April 19',
+    location: 'Bishop Dwenger (Fort Wayne)',
+    games: {
+      '12u': ['12pm Storm vs Zionsville', '2pm Storm vs Zionsville'],
+      '14u': ['1pm Storm vs Zionsville', '3pm Storm vs Zionsville'],
+    },
+  },
+  {
+    date: 'April 26',
+    location: null,
+    note: 'More information coming. Storm playing Evansville Memorial & Bloomington.',
+  },
+  {
+    date: 'May 3',
+    location: 'Bishop Dwenger (Fort Wayne)',
+    games: {
+      '12u': ['12pm Storm vs Northridge', '2pm Storm vs Northridge'],
+      '14u': ['1pm Storm vs Northridge', '3pm Storm vs Northridge'],
+    },
+  },
+  {
+    date: 'May 10',
+    location: null,
+    note: 'More information coming. Storm playing Columbus & Castle.',
+  },
+  {
+    date: 'May 17',
+    location: null,
+    note: 'State Tournament',
+  },
+];
+
 function Schedule() {
-    return (
-      <div className='App'>
-        <header>
-          <Banner></Banner>
-        </header>
-        <Navbar></Navbar>
+  return (
+    <div className='App'>
+      <header>
+        <Banner></Banner>
+      </header>
+      <Navbar></Navbar>
 
-        <div className='container'> 
-          <div className='columns'>
-            <div className='column'>
+      <div className='container'>
+        <div className='columns'>
+          <div className='column'>
             <h2>Winter Training Schedule</h2>
-            <p>Sunday Mornings <br />8:00am - 10:00pm <br />January 11th - End of March<br/>
+            <p>Sunday Mornings <br />8:00am - 10:00pm <br />January 11th - End of March<br />
               At PSM Empowered (<a href="https://maps.app.goo.gl/fTatdYHzMGEiv4Az7" aria-label="PSM Empowered">map</a>) </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.011948370305!2d-85.16902202405102!3d41.195753307860066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8815e375e367880f%3A0x8c2de7590d02399e!2sPSM%20Empowered!5e1!3m2!1sen!2sus!4v1761570952453!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PSM Empowered"></iframe>
-            </div>
-
-            <div className='column'>
-              <h2>Spring Training Schedule</h2>
-              <p>Tuesdays & Thursdays <br />6:00pm - 7:30pm <br />Beginning of March - The End of May <br/>
-              At Perry Hill Elementary (<a href="https://maps.app.goo.gl/NpiDyWCZtUv2iYRZ6" aria-label="Perry Hill Elementary Map">map</a>) </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4348.166947972989!2d-85.13721921318974!3d41.20278843911993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881608441ccf89cd%3A0x3ee843eaf3f847ee!2sPerry%20Hill%20Elementary%20School!5e1!3m2!1sen!2sus!4v1733604437426!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Perry Hill Elementary"></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.011948370305!2d-85.16902202405102!3d41.195753307860066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8815e375e367880f%3A0x8c2de7590d02399e!2sPSM%20Empowered!5e1!3m2!1sen!2sus!4v1761570952453!5m2!1sen!2sus" width="300" height="225" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="PSM Empowered"></iframe>
           </div>
-            
-            <div className='centered'>
-              <br /> <br />
-            <h2>Spring 2026 Games</h2>
-            
-              <h3>Schedule Coming soon!</h3>
-              {/* <table className="schedule-table">
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Opponent</th>
-                  <th>Location</th>
-                </tr>
-                <tr>
-                  <td>March 23rd</td>
-                  <td>11am, 12:15pm, 1:30pm, 2:15pm</td>
-                  <td>Westfield</td>
-                  <td>Bishop Dwenger</td>
-                </tr>
-                <tr>
-                  <td>April 13th</td>
-                  <td>12:00pm, 1:00pm, 2:00pm, 3:00pm</td>
-                  <td>Northridge</td>
-                  <td>Bishop Dwenger</td>
-                </tr>
-                <tr>
-                  <td>April 19th</td>
-                  <td>12:00pm, 1:00pm, 2:00pm, 3:00pm</td>
-                  <td>Evansville North &amp; Bloomington</td>
-                  <td>Bloomington, IN</td>
-                </tr>
-                <tr>
-                  <td>April 27th</td>
-                  <td>11:00am, 12:00pm, 3:00pm, 4:00pm</td>
-                  <td>Brownsburg &amp; Noblesville</td>
-                  <td>Bishop Dwenger</td>
-                </tr>
-                <tr>
-                  <td>May 3rd</td>
-                  <td>1:00am, 12:30pm, 2:00pm</td>
-                  <td>Irish Youth Lacrosse &amp; Northridge</td>
-                  <td>Van Hoozen Community Park</td>
-                </tr>
-                <tr>
-                  <td>May 4th</td>
-                  <td>12:00pm, 1:15pm, 2:30pm, 3:45pm</td>
-                  <td>Zionsville &amp; Perry</td>
-                  <td>Zionsville, IN</td>
-                </tr>
-                <tr>
-                  <td>May 10th</td>
-                  <td>2:00pm, 3:00pm</td>
-                  <td>Carmel &amp; Columbus</td>
-                  <td>Carmel, IN</td>
-                </tr>
-                <tr>
-                  <td>May 17th</td>
-                  <td>TBD</td>
-                  <td>TBD</td>
-                  <td>Fishers, IN</td>
-                </tr>
-              </table> */}
 
-            
-            </div>
+          <div className='column'>
+            <h2>Spring Training Schedule</h2>
+            <p>Tuesdays & Thursdays <br />6:00pm - 7:30pm <br />Beginning of March - The End of May <br />
+              At Perry Hill Elementary (<a href="https://maps.app.goo.gl/NpiDyWCZtUv2iYRZ6" aria-label="Perry Hill Elementary Map">map</a>) </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4348.166947972989!2d-85.13721921318974!3d41.20278843911993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881608441ccf89cd%3A0x3ee843eaf3f847ee!2sPerry%20Hill%20Elementary%20School!5e1!3m2!1sen!2sus!4v1733604437426!5m2!1sen!2sus" width="300" height="225" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Perry Hill Elementary"></iframe>
+          </div>
+        </div>
+
+        <div className='schedule-section'>
+          <h2>Spring 2026 Games</h2>
+          <div className='schedule-cards'>
+            {SPRING_2026_SCHEDULE.map((event, index) => (
+              <article key={index} className='schedule-card'>
+                <h3 className='schedule-card__date'>{event.date}</h3>
+                {event.location && <p className='schedule-card__location'>{event.location}</p>}
+                {event.note ? (
+                  <p className='schedule-card__note'>{event.note}</p>
+                ) : (
+                  <div className='schedule-card__games'>
+                    {Object.entries(event.games).map(([age, list]) => (
+                      <div key={age} className='schedule-card__division'>
+                        <span className='schedule-card__division-label'>{age}</span>
+                        <ul>
+                          {list.map((game, i) => (
+                            <li key={i}>{game}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
         </div>
       </div>
-        )
-    }
-;
+    </div>
+  );
+}
+
 export default Schedule;
