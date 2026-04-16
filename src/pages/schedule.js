@@ -13,24 +13,31 @@ const SPRING_2026_SCHEDULE = [
   },
   {
     date: 'April 18',
-    location: 'Van Hoozen (Fort Wayne)',
+    location: 'Van Hoozen — 11321 Aboite Ctr Rd, Fort Wayne 46814',
     games: {
-      '12u': ['12pm Storm vs Heritage Christian', '1pm Noblesville vs Heritage Christian', '2pm Storm vs Noblesville'],
-      '14u': ['12pm Storm vs Heritage Christian', '1pm Heritage Christian vs Noblesville', '2pm Storm vs Noblesville'],
+      '12u & 14u': ['2:30pm Storm vs Heritage Christian'],
     },
   },
   {
     date: 'April 19',
-    location: 'Bishop Dwenger (Fort Wayne)',
+    location: 'Bishop Dwenger — 1300 E. Washington Ctr Rd, Fort Wayne 46825',
     games: {
       '12u': ['12pm Storm vs Zionsville', '2pm Storm vs Zionsville'],
       '14u': ['1pm Storm vs Zionsville', '3pm Storm vs Zionsville'],
     },
   },
   {
+    date: 'April 25',
+    location: 'Bishop Dwenger',
+    note: 'Storm Night @ Dwenger, 4–7pm',
+  },
+  {
     date: 'April 26',
-    location: null,
-    note: 'More information coming. Storm playing Evansville Memorial & Bloomington.',
+    location: 'Karst Farm Park — 2450 S. Endwright Rd., Bloomington, IN 47403',
+    games: {
+      '12u': ['1pm Storm vs Evansville', '2pm Storm vs Bloomington'],
+      '14u': ['10am Storm vs Bloomington', '11am Storm vs Evansville'],
+    },
   },
   {
     date: 'May 3',
@@ -41,14 +48,14 @@ const SPRING_2026_SCHEDULE = [
     },
   },
   {
-    date: 'May 10',
+    date: 'May 9',
     location: null,
-    note: 'More information coming. Storm playing Columbus & Castle.',
+    note: 'Game vs. Columbus & Castle. Time & location TBD.',
   },
   {
     date: 'May 17',
     location: null,
-    note: 'State Tournament',
+    note: 'State Tournament. Info TBD.',
   },
 ];
 
