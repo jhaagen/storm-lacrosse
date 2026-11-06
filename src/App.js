@@ -9,30 +9,25 @@ import Equipment from './pages/equipment';
 import AreaTeams from './pages/area-teams';
 import Contact from './pages/contact';
 import SEO from './components/seo';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <>
       <SEO />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/registration' element={<Registration />} />
-        <Route path='/schedule' element={<Schedule />} />
-        <Route path='/equipment' element={<Equipment />} />
-        <Route path='/area-teams' element={<AreaTeams />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-      <footer>
-        <div className='footer-contact'><h2>Contact Us</h2>
-        <p><a href="mailto:fwstormlacrosse@outlook.com">Email us</a><br/>
-        <a href='https://www.facebook.com/fortwaynestormlacrosse' target='_blank'rel='noreferrer'>Find us on Facebook</a></p>
-        </div>
-        <p>Copyright &copy; {new Date().getFullYear()} Storm | Fort Wayne Boys Lacrosse. All Rights Reserved.</p>
-      </footer>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/registration' element={<Registration />} />
+          <Route path='/schedule' element={<Schedule />} />
+          <Route path='/equipment' element={<Equipment />} />
+          <Route path='/area-teams' element={<AreaTeams />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Layout>
     </>
   );
 }
 
 export default App;
-

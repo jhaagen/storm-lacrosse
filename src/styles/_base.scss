@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--storm-bg);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--storm-green-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #000000;
+}
+
+main:focus {
+  outline: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  z-index: 10;
+  padding: 12px 20px;
+  background: var(--storm-green);
+  color: #000;
+  font-family: var(--font-label);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+
+  &:focus {
+    top: 16px;
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.wrap {
+  width: 100%;
+  max-width: calc(var(--max-width) + 2 * var(--pad-x));
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
+
+.plain-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Type
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.h1-home {
+  font-size: clamp(52px, 9.5vw, 150px);
+  line-height: 0.88;
+}
+
+.h1-page {
+  font-size: clamp(46px, 9vw, 140px);
+  line-height: 0.88;
+}
+
+.h2-section {
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.92;
+}
+
+.label {
+  font-family: var(--font-label);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.text-green {
+  color: var(--storm-green);
+}
+
+.line {
+  display: block;
+}
+
+.lead {
+  font-size: 20px;
+  color: var(--text-body);
+  max-width: 44rem;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+// Shared flex rows: columns stack on phones without breakpoints.
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(24px, 4vw, 64px);
+}
+
+.col {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  > * {
+    flex: 1 1 280px;
+    min-width: 0;
+  }
+}
+
+.cut-corner {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%);
+}
+
+// Outline number used on cards
+.outline-num {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--storm-green);
+  line-height: 1;
+}
