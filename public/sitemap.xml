@@ -7,31 +7,31 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fwblacrosse.org/registration</loc>
+    <loc>https://fwblacrosse.org/registration/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fwblacrosse.org/schedule</loc>
+    <loc>https://fwblacrosse.org/schedule/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fwblacrosse.org/equipment</loc>
+    <loc>https://fwblacrosse.org/equipment/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fwblacrosse.org/area-teams</loc>
+    <loc>https://fwblacrosse.org/area-teams/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fwblacrosse.org/contact</loc>
+    <loc>https://fwblacrosse.org/contact/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

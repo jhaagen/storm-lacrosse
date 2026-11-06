@@ -50,7 +50,9 @@ function render(route) {
 }
 
 for (const route of ROUTES) {
-  const file = route === '/' ? 'index.html' : `${route.slice(1)}.html`;
+  // Folder-per-page (registration/index.html) so Azure serves both /registration and /registration/.
+  const file = route === '/' ? 'index.html' : route === '/404' ? '404.html' : `${route.slice(1)}/index.html`;
+  fs.mkdirSync(path.dirname(path.join(BUILD_DIR, file)), { recursive: true });
   fs.writeFileSync(path.join(BUILD_DIR, file), render(route));
   console.log(`Prerendered ${route} -> build/${file}`);
 }

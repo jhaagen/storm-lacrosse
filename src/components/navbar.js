@@ -55,19 +55,19 @@ function Navbar() {
           <NavLink to='/' >
             Home
           </NavLink>
-          <NavLink to='/registration' >
+          <NavLink to='/registration/' >
             Registration
           </NavLink>
-          <NavLink to='/schedule' >
+          <NavLink to='/schedule/' >
             Schedule
           </NavLink>
-          <NavLink to='/equipment' >
+          <NavLink to='/equipment/' >
             Equipment
           </NavLink>
-          <NavLink to='/area-teams' >
+          <NavLink to='/area-teams/' >
             Area Teams
           </NavLink>
-          <NavLink to='/contact' >
+          <NavLink to='/contact/' >
             Contact
           </NavLink>          
         </NavMenu>
