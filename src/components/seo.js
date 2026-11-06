@@ -12,7 +12,7 @@ const SEO = () => {
       case '/':
         return {
           title: 'Home',
-          description: "The Fort Wayne Storm is a youth lacrosse program dedicated to fostering a love for the sport and developing the skills of young athletes in grades 3-8."
+          description: "The Fort Wayne Storm is a youth boys lacrosse travel team in Fort Wayne, Indiana for grades 3-8, with 10U, 12U, and 14U teams. Spring 2027 registration is open."
         };
       case '/registration':
         return {
@@ -49,18 +49,21 @@ const SEO = () => {
 
   const { title, description } = getPageMetadata();
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const defaultImage = "/assets/storm-game.jpg";
+  const defaultImage = `${siteUrl}/assets/storm-game.jpg`;
+  const pageUrl = `${siteUrl}${location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '')}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "website",
-    "name": fullTitle,
+    "@type": "SportsTeam",
+    "name": "Fort Wayne Storm Lacrosse",
+    "sport": "Lacrosse",
     "description": description,
     "image": defaultImage,
-    "url": `${siteUrl}${location.pathname}`,
-    "logo": `${siteUrl}/assets/storm-game.jpg`,
+    "url": siteUrl,
+    "logo": `${siteUrl}/assets/storm-logo.png`,
     "sameAs": [
-      "https://www.facebook.com/fortwaynestormlacrosse"
+      "https://www.facebook.com/fortwaynestormlacrosse",
+      "https://www.instagram.com/fortwaynestormlacrosse"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -75,11 +78,12 @@ const SEO = () => {
       <html lang="en" />
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={pageUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={defaultImage} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
+      <meta property="og:url" content={pageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />

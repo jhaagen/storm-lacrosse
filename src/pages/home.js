@@ -12,7 +12,7 @@ function Home() {
         <Navbar></Navbar>
 
         <div className='container home'> 
-            <div><h2>What is Storm</h2>
+            <div><h2>Fort Wayne Youth Boys Lacrosse</h2>
             <p>The Fort Wayne Storm is a youth lacrosse program dedicated to fostering a love for the sport and developing the skills of young athletes in grades 3-8. Our team is committed to providing a positive and supportive environment where players can learn, grow, and have fun.
             </p>
             <p>

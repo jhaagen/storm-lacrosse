@@ -1,53 +1,13 @@
-const CACHE_NAME = 'storm-lacrosse-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/assets/storm-game.jpg',
-  '/assets/usa-lacrosse.png',
-  '/static/css/main.css',
-  '/static/js/main.js'
-];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-  );
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request)
-          .then(response => {
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-            const responseToCache = response.clone();
-            caches.open(CACHE_NAME)
-              .then(cache => {
-                cache.put(event.request, responseToCache);
-              });
-            return response;
-          });
-      })
-  );
-});
+// Retired: the old cache-first worker served stale pages to returning visitors.
+// This version clears its caches, unregisters itself, and reloads open tabs.
+self.addEventListener('install', () => self.skipWaiting());
 
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    caches.keys()
+      .then(names => Promise.all(names.map(name => caches.delete(name))))
+      .then(() => self.registration.unregister())
+      .then(() => self.clients.matchAll({ type: 'window' }))
+      .then(clients => clients.forEach(client => client.navigate(client.url)))
   );
-}); 
+});

@@ -6,7 +6,7 @@ return (
 
 <div className="banner">
     <div className="logo">
-        <img src="./assets/storm-logo.png" alt="Storm Lacrosse Logo" />
+        <h1><img src="/assets/storm-logo.png" alt="Fort Wayne Storm Youth Boys Lacrosse" /></h1>
     </div>
 
 </div>
