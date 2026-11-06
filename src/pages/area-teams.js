@@ -1,36 +1,41 @@
 import React from 'react';
-import Banner from '../components/banner';
-import Navbar from '../components/navbar';
+import PageHero from '../components/PageHero';
+import Section from '../components/Section';
+import { ArrowIcon } from '../components/Icons';
+import { areaTeams } from '../data/season';
+
+function TeamLinks({ teams, green = false }) {
+  return (
+    <ul className="plain-list grid area__grid">
+      {teams.map((team) => (
+        <li key={team.name}>
+          <a className={`link-card ${green ? 'link-card--green' : 'link-card--surface'}`} href={team.url}>
+            <span className="display link-card__name link-card__name--md">{team.name}</span>
+            <ArrowIcon diagonal className="link-card__arrow" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 function AreaTeams() {
-    return (
-      <div className='App'>
-        <header>
-          <Banner></Banner>
-        </header>
-        <Navbar></Navbar>
+  return (
+    <>
+      <PageHero
+        eyebrow="Area teams"
+        title={<><span className="line">The next</span>{' '}<span className="line text-green">level.</span></>}
+        lead="Fort Wayne has several high school club teams. Storm's goal is to make sure our players are ready to compete in high school and beyond."
+        outlineWord="Next"
+      />
+      <Section className="section--flush-top area">
+        <h2 className="area__heading">High school</h2>
+        <TeamLinks teams={areaTeams.highSchool} />
+        <h2 className="area__heading area__heading--spaced">College</h2>
+        <TeamLinks teams={areaTeams.college} green />
+      </Section>
+    </>
+  );
+}
 
-        <div className='container'> 
-            <h2>Area High School Club Teams</h2>
-            <p>There are several area high school teams in the Fort Wayne area. Storm's goal is to ensure our players are prepared to be competitive in high school and beyond.</p>
-            <h3><a href="https://homesteadlax.com/">Homestead High School</a></h3>
-            <p></p>
-            <h3><a href="https://www.leolionslacrosse.org/">Leo High School</a></h3>
-            <p></p>
-            <h3><a href="https://www.facebook.com/carrolllacrosseclub/">Carroll High School</a></h3>
-            <p></p>
-            <h3><a href="https://sniderathletics.com/teams/4395897/lacrosse/varsity">Snider High School</a></h3>
-            <p></p>
-            <h3><a href="https://athletics.bishopdwenger.com/lacrosse">Bishop Dwenger High School</a></h3>
-            <p></p>
-            <h3><a href="https://www.clhscadets.com/apps/pages/lacrosse">Concordia Lutheran High School</a></h3>
-            <p></p>
-           <h3><a href="https://trinethunder.com/sports/mens-lacrosse">Trine University</a></h3>
-           <p></p>
-            <h3><a href="https://indianatechwarriors.com/sports/mens-lacrosse">Indiana Tech</a></h3>
-        </div>
-      </div>
-        )
-    }
-;
 export default AreaTeams;
