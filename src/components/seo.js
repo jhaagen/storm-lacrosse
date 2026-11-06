@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 const SEO = () => {
   const location = useLocation();
   const siteTitle = "Storm Youth Lacrosse | Fort Wayne Indiana";
-  const siteUrl = "https://stormlacrosse.com";
+  const siteUrl = "https://fwblacrosse.org";
 
   const getPageMetadata = () => {
     switch (location.pathname) {

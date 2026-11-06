@@ -13,7 +13,7 @@ function Registration() {
 
         <div className='container'> 
             <h2>Spring 2027 Registration</h2>
-            <p>Registration is open for the 2027 spring season. We are looking to fill up to 3 teams; 10U, 12U and a 14U team. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
+            <p>Registration is open for the 2027 spring season. We are looking to fill 3 teams: 10U, 12U and 14U. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
             <p>To register please fill out the Registration form, as well as the Medical form.</p>
             <ul>
               <li>Registration: <a className='button' href="https://forms.gle/54TY9wYb4fy1861YA">Registration Form</a>
