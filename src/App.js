@@ -28,7 +28,7 @@ function App() {
         <p><a href="mailto:fwstormlacrosse@outlook.com">Email us</a><br/>
         <a href='https://www.facebook.com/fortwaynestormlacrosse' target='_blank'rel='noreferrer'>Find us on Facebook</a></p>
         </div>
-        <p>Copyright &copy; 2024 Storm | Fort Wayne Boys Lacrosse. All Rights Reserved.</p>
+        <p>Copyright &copy; {new Date().getFullYear()} Storm | Fort Wayne Boys Lacrosse. All Rights Reserved.</p>
       </footer>
     </>
   );

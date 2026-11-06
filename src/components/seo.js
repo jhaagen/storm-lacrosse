@@ -17,12 +17,12 @@ const SEO = () => {
       case '/registration':
         return {
           title: 'Registration',
-          description: "Register for the Fort Wayne Storm lacrosse team's 2025 spring season. Open for 10U, 12U, and 14U teams. Includes winter training and spring games."
+          description: "Register for the Fort Wayne Storm lacrosse team's 2027 spring season. Open for 10U, 12U, and 14U teams. Includes winter training and spring games."
         };
       case '/schedule':
         return {
           title: 'Schedule',
-          description: "View the Fort Wayne Storm lacrosse team's winter training schedule, spring training schedule, and upcoming games for the 2025 season."
+          description: "View the Fort Wayne Storm lacrosse team's winter training schedule, spring training schedule, and upcoming games for the 2027 season."
         };
       case '/equipment':
         return {

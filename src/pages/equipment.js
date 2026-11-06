@@ -35,6 +35,7 @@ function Equipment() {
            <h2>Suggested Vendors for Gear</h2>
            <p>
             <a target='_blank' rel="noreferrer" href="https://www.lacrossemonkey.com/">Lacrosse Monkey</a>
+            <br />
             <a target='_blank' rel="noreferrer" href="https://empirelax.com/">Empire Lacrosse</a>
             
            </p>
