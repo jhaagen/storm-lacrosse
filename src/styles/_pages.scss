@@ -1,0 +1,834 @@
+// ---------- Home ----------
+.home-hero {
+  position: relative;
+  padding: clamp(56px, 8vw, 104px) 0 clamp(64px, 8vw, 112px);
+
+  &__outline {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    .outline-word {
+      bottom: -0.08em;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  &__text {
+    flex: 1 1 520px;
+    min-width: 0;
+  }
+
+  &__tag {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    color: var(--storm-ink);
+
+    span {
+      display: inline-block;
+      padding: 8px 22px;
+      background: var(--storm-green);
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    }
+  }
+
+  &__lead {
+    margin-top: 32px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  &__note {
+    margin-top: 28px;
+    font-size: 16px;
+    color: var(--text-muted);
+  }
+
+  &__media {
+    position: relative;
+    flex: 1 1 400px;
+    min-width: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1.02;
+      object-fit: cover;
+      object-position: 62% 40%;
+      clip-path: polygon(var(--angle) 0, 100% 0, 100% calc(100% - var(--angle)), calc(100% - var(--angle)) 100%, 0 100%, 0 var(--angle));
+    }
+  }
+
+  &__bolt {
+    position: absolute;
+    left: -24px;
+    bottom: -44px;
+    width: clamp(64px, 8vw, 104px);
+    height: auto;
+    color: var(--storm-green);
+  }
+}
+
+.band-wrap {
+  overflow: hidden;
+  padding: 24px 0;
+}
+
+.band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px clamp(20px, 3vw, 40px);
+  width: 104%;
+  margin-left: -2%;
+  padding: 22px var(--pad-x);
+  background: var(--storm-green);
+  color: var(--storm-ink);
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.4vw, 46px);
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-1.6deg);
+
+  &__bolt svg {
+    width: 0.5em;
+    height: auto;
+  }
+}
+
+.who {
+  &__intro {
+    align-items: center;
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+
+  &__copy {
+    color: var(--text-body);
+  }
+
+  &__card {
+    padding: 32px;
+    background: var(--storm-surface);
+    border-top: 4px solid var(--storm-green);
+
+    p {
+      margin-top: 12px;
+    }
+  }
+
+  &__num {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 60px;
+  }
+
+  &__card-title {
+    font-size: clamp(30px, 3vw, 38px);
+    line-height: 1;
+  }
+}
+
+.season {
+  &__col {
+    border-top: 6px solid var(--paper-text);
+    padding-top: 20px;
+
+    &--accent {
+      border-top-color: var(--storm-green);
+    }
+  }
+
+  &__big {
+    font-size: clamp(88px, 10vw, 140px);
+    line-height: 0.9;
+  }
+
+  &__title {
+    margin: 20px 0 12px;
+    font-family: var(--font-label);
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--paper-text);
+  }
+}
+
+.teams {
+  &__intro {
+    margin: 16px 0 clamp(32px, 4vw, 56px);
+  }
+
+  &__card {
+    padding: 32px;
+    border: 1px solid var(--storm-border);
+  }
+
+  &__name {
+    font-size: clamp(96px, 11vw, 150px);
+    line-height: 0.9;
+    color: var(--storm-green);
+  }
+
+  &__label {
+    margin-top: 16px;
+    font-family: var(--font-label);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+  }
+
+  &__range {
+    margin-top: 4px;
+    font-family: var(--font-label);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  &__note {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}
+
+.photo-strip__item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+}
+
+.next {
+  .row {
+    align-items: center;
+  }
+
+  &__copy {
+    margin: 20px 0 24px;
+    max-width: 36rem;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  padding: 12px 22px;
+  border: 2px solid var(--storm-border);
+  font-family: var(--font-label);
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+
+  &--green {
+    border-color: var(--storm-green);
+    color: var(--storm-green);
+  }
+}
+
+// ---------- Inner-page hero extras ----------
+.page-hero__main {
+  flex-basis: 560px;
+}
+
+.page-hero__aside {
+  display: flex;
+  align-items: center;
+}
+
+.callout {
+  width: 100%;
+  padding: 32px 36px 40px;
+  background: var(--storm-green);
+  color: var(--storm-ink);
+  font-weight: 500;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: clamp(32px, 3.4vw, 44px);
+    line-height: 1;
+    color: var(--storm-ink);
+  }
+}
+
+.not-found__actions {
+  margin-top: 36px;
+}
+
+// ---------- Registration ----------
+.reg-price {
+  &__pair {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    .eyebrow {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__early {
+    font-size: clamp(110px, 13vw, 190px);
+    line-height: 0.85;
+  }
+
+  &__regular {
+    font-size: clamp(56px, 6vw, 80px);
+    line-height: 0.9;
+  }
+
+  &__covers {
+    margin-top: 32px;
+    font-family: var(--font-label);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-top: 16px;
+
+    li {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      padding: 6px 0;
+      font-weight: 500;
+    }
+  }
+
+  &__num {
+    font-family: var(--font-display);
+    font-size: 24px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: clamp(32px, 3.4vw, 44px);
+    line-height: 1;
+  }
+}
+
+.birthdates {
+  &__region {
+    margin-top: clamp(32px, 4vw, 48px);
+    overflow-x: auto;
+  }
+
+  &__table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    text-align: left;
+
+    thead th {
+      padding: 0 16px 16px 0;
+      border-bottom: 3px solid var(--storm-green);
+      font-family: var(--font-label);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+    }
+
+    tbody th,
+    tbody td {
+      padding: 24px 16px 24px 0;
+      border-bottom: 1px solid var(--storm-rule);
+      vertical-align: middle;
+    }
+
+    tbody th {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 4vw, 52px);
+      font-weight: 400;
+      line-height: 1;
+      color: var(--storm-green);
+    }
+
+    tbody td {
+      font-family: var(--font-label);
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text);
+
+      &:last-child {
+        font-family: var(--font-body);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-muted);
+      }
+    }
+  }
+}
+
+.parents {
+  &__item {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 6px solid var(--paper-text);
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-label);
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--paper-text);
+  }
+
+  &__code {
+    padding: clamp(32px, 4vw, 52px);
+    padding-bottom: calc(clamp(32px, 4vw, 52px) + var(--cut));
+    background: var(--storm-bg);
+    color: var(--text-body);
+  }
+
+  &__code-title {
+    font-size: clamp(40px, 4.4vw, 60px);
+    line-height: 1;
+
+    .section--paper & {
+      color: var(--text);
+    }
+  }
+
+  &__rules {
+    margin-top: 24px;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: rule;
+
+    li {
+      position: relative;
+      padding: 8px 0 8px 40px;
+      counter-increment: rule;
+
+      &::before {
+        content: counter(rule);
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-family: var(--font-display);
+        font-size: 34px;
+        line-height: 1.1;
+        color: var(--storm-green);
+      }
+    }
+  }
+}
+
+// ---------- Schedule ----------
+.practices__grid > * {
+  flex-basis: 420px;
+}
+
+.practice {
+  position: relative;
+  padding: clamp(32px, 4vw, 52px);
+  padding-bottom: calc(clamp(32px, 4vw, 52px) + var(--cut));
+
+  &--dark {
+    background: var(--storm-surface);
+    border-top: 6px solid var(--storm-green);
+  }
+
+  &--green {
+    background: var(--storm-green);
+    color: var(--storm-ink);
+
+    // Doubled class so these beat the base dt/dd rules below: white on green fails contrast.
+    &.practice .eyebrow,
+    &.practice .practice__title,
+    &.practice dt,
+    &.practice dd {
+      color: var(--storm-ink);
+    }
+
+    .practice__details > div {
+      border-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .practice__bolt {
+      color: var(--storm-ink);
+    }
+  }
+
+  &__bolt {
+    position: absolute;
+    top: clamp(32px, 4vw, 52px);
+    right: clamp(32px, 4vw, 52px);
+    width: 48px;
+    height: auto;
+    color: var(--storm-green);
+  }
+
+  &__title {
+    padding-right: 64px;
+    font-size: clamp(52px, 5.4vw, 76px);
+    line-height: 0.92;
+  }
+
+  &__details {
+    margin: 28px 0 32px;
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--storm-border);
+
+      &:first-child {
+        border-top: 1px solid var(--storm-border);
+      }
+    }
+  }
+
+  dt {
+    flex: 0 0 120px;
+    padding-top: 4px;
+    font-family: var(--font-label);
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+  }
+
+  dd {
+    flex: 1 1 200px;
+    font-family: var(--font-label);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--text);
+  }
+}
+
+.gameday {
+  .row {
+    align-items: center;
+  }
+
+  &__copy {
+    margin-top: 20px;
+    max-width: 36rem;
+  }
+
+  &__stat {
+    padding: clamp(28px, 4vw, 44px);
+    border: 3px solid var(--paper-text);
+  }
+
+  &__big {
+    display: block;
+    font-size: clamp(110px, 13vw, 180px);
+    line-height: 0.9;
+  }
+
+  &__label {
+    margin-top: 12px;
+    font-family: var(--font-label);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--paper-text);
+  }
+}
+
+// ---------- Equipment ----------
+.checklist {
+  &__title {
+    margin-bottom: 24px;
+    font-size: clamp(44px, 5vw, 76px);
+    line-height: 0.95;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex: 1 1 260px;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background: var(--storm-surface);
+  }
+
+  &__num {
+    flex: none;
+    font-size: 44px;
+  }
+
+  &__name {
+    display: block;
+    font-family: var(--font-label);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text);
+  }
+
+  &__note {
+    display: block;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 22px 28px;
+  border: 2px solid var(--storm-border);
+  font-size: 17px;
+
+  &--green {
+    border-color: var(--storm-green);
+  }
+
+  strong {
+    font-family: var(--font-label);
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  &__bolt {
+    flex: none;
+    width: 22px;
+    height: auto;
+    color: var(--storm-green);
+  }
+}
+
+.vendors {
+  border-top: 1px solid var(--storm-rule);
+
+  &__grid {
+    margin-top: clamp(32px, 4vw, 48px);
+  }
+}
+
+.care {
+  &__tips {
+    margin-top: clamp(32px, 4vw, 48px);
+    gap: 24px;
+  }
+
+  &__tip {
+    padding-top: 24px;
+    border-top: 6px solid var(--paper-text);
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-label);
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--paper-text);
+  }
+}
+
+// ---------- Link cards (Equipment, Area Teams, Contact) ----------
+.link-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  height: 100%;
+  min-height: 44px;
+  padding: clamp(24px, 3vw, 36px);
+  text-decoration: none;
+
+  &__name {
+    display: block;
+    font-size: clamp(44px, 5vw, 72px);
+    line-height: 0.92;
+    overflow-wrap: break-word;
+    min-width: 0;
+
+    &--md {
+      font-size: clamp(34px, 3.4vw, 48px);
+    }
+  }
+
+  &__arrow {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+
+  &--outline {
+    border: 2px solid var(--text);
+    color: var(--text);
+
+    .link-card__arrow {
+      color: var(--storm-green);
+    }
+
+    &:hover {
+      border-color: var(--storm-green);
+      color: var(--text);
+    }
+  }
+
+  &--surface {
+    align-items: center;
+    background: var(--storm-surface);
+    color: var(--text);
+
+    .link-card__arrow {
+      color: var(--storm-green);
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: var(--storm-green-hover);
+    }
+  }
+
+  &--green {
+    align-items: center;
+    background: var(--storm-green);
+    color: var(--storm-ink);
+
+    .display {
+      color: var(--storm-ink);
+    }
+
+    .eyebrow {
+      color: var(--storm-ink);
+    }
+
+    .link-card__arrow {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: var(--storm-ink);
+      background: var(--storm-green-hover);
+    }
+  }
+}
+
+// ---------- Area Teams ----------
+.area {
+  &__heading {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid var(--storm-green);
+    font-family: var(--font-label);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text);
+
+    &--spaced {
+      margin-top: clamp(48px, 6vw, 72px);
+    }
+  }
+
+  &__grid {
+    gap: 12px;
+
+    > * {
+      flex-basis: 340px;
+    }
+  }
+}
+
+// ---------- Contact ----------
+.contact {
+  &__email {
+    padding: clamp(32px, 5vw, 64px);
+  }
+
+  &__address {
+    display: block;
+    font-size: clamp(28px, 6vw, 88px);
+    line-height: 1;
+    text-transform: none;
+    overflow-wrap: anywhere;
+  }
+
+  &__social {
+    margin-top: 16px;
+  }
+
+  &__follow {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--font-label);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+  }
+
+  .notice {
+    margin-top: 16px;
+  }
+}

@@ -42,7 +42,7 @@ const SEO = () => {
       case '/contact/':
         return {
           title: 'Contact',
-          description: "Get in touch with the Fort Wayne Storm lacrosse team. Contact our staff including Program Coordinator, Director of Coaching, and team coaches."
+          description: "Contact the Fort Wayne Storm youth boys lacrosse program by email, or follow the team on Facebook and Instagram."
         };
       default:
         return {
