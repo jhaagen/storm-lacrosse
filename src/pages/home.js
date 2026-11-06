@@ -25,7 +25,7 @@ function Home() {
             Whether you're a seasoned player or just starting out, the Fort Wayne Storm is the perfect place to take your lacrosse game to the next level. Join us and become part of a team that is dedicated to excellence, sportsmanship, and the joy of the game.</p>
             </div>
             <img 
-              src="./assets/storm-game.jpg" 
+              src="/assets/storm-game.jpg" 
               alt="Fort Wayne Storm Lacrosse Team in action during a game" 
               loading="lazy"
               width="800"

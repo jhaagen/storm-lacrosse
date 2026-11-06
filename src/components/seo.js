@@ -42,12 +42,13 @@ const SEO = () => {
       default:
         return {
           title: 'Page Not Found',
-          description: "The page you are looking for could not be found. Please contact us with any issues you may be experiencing."
+          description: "The page you are looking for could not be found. Please contact us with any issues you may be experiencing.",
+          notFound: true
         };
     }
   };
 
-  const { title, description } = getPageMetadata();
+  const { title, description, notFound } = getPageMetadata();
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const defaultImage = `${siteUrl}/assets/storm-game.jpg`;
   const pageUrl = `${siteUrl}${location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '')}`;
@@ -61,6 +62,7 @@ const SEO = () => {
     "image": defaultImage,
     "url": siteUrl,
     "logo": `${siteUrl}/assets/storm-logo.png`,
+    "email": "fwstormlacrosse@outlook.com",
     "sameAs": [
       "https://www.facebook.com/fortwaynestormlacrosse",
       "https://www.instagram.com/fortwaynestormlacrosse"
@@ -78,7 +80,7 @@ const SEO = () => {
       <html lang="en" />
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={pageUrl} />
+      {notFound ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={pageUrl} />}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={defaultImage} />

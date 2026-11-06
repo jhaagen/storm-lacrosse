@@ -28,7 +28,7 @@ function Registration() {
               <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
               <br/>
               <img 
-                src="./assets/usa-lacrosse.png" 
+                src="/assets/usa-lacrosse.png" 
                 alt="USA Lacrosse Membership Logo" 
                 loading="lazy"
                 width="200"
