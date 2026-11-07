@@ -31,15 +31,6 @@ function Contact() {
               <ArrowIcon diagonal className="link-card__arrow" />
             </a>
           </li>
-          <li>
-            <a className="link-card link-card--outline" href={contact.instagram}>
-              <span>
-                <span className="contact__follow">Follow</span>
-                <span className="display link-card__name">Instagram</span>
-              </span>
-              <ArrowIcon diagonal className="link-card__arrow" />
-            </a>
-          </li>
         </ul>
         <p className="notice">
           <BoltIcon className="notice__bolt" />

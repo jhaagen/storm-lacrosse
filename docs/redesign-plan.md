@@ -95,7 +95,7 @@ One `Layout` owns the skip link, header, `<main>` and footer, so pages only rend
   - `Layout`: skip link, `SiteHeader`, `<main id="main" tabIndex="-1">`, `Footer`
   - Pages: built from `PageHero`, `Section`, `Eyebrow`, `ButtonLink`, `BoltIcon`, `RegisterBlock`
 
-**`src/data/season.js`** is the single source for: fees ($375 through Dec 31, 2026 and $400 from Jan 1, 2027), the USA Lacrosse fee ($35), what the fee covers, the three registration links, the birthdate ranges, both practice schedules with map links, the area team names and URLs, email, Facebook and Instagram URLs.
+**`src/data/season.js`** is the single source for: fees ($375 through Dec 31, 2026 and $400 from Jan 1, 2027), the USA Lacrosse fee ($35), what the fee covers, the three registration links, the birthdate ranges, both practice schedules with map links, the area team names and URLs, email and Facebook URL. (The club has no Instagram account; it was dropped before launch.)
 
 **`Layout`**
 
@@ -111,7 +111,7 @@ One `Layout` owns the skip link, header, `<main>` and footer, so pages only rend
 
 **`Footer`**
 
-- Default: h2 "Questions?", email as a `mailto:` link, the line "Season updates go out through the GameChanger app.", Facebook and Instagram buttons, and the copyright line with `new Date().getFullYear()`.
+- Default: h2 "Questions?", email as a `mailto:` link, the line "Season updates go out through the GameChanger app.", a Facebook button, and the copyright line with `new Date().getFullYear()`.
 - `compact` prop for Contact: copyright line only, since the page body already has everything else.
 
 **Primitives**
@@ -181,7 +181,7 @@ Each page below lists its sections top to bottom with exact copy. Quoted text is
 ### Contact (`/contact/`)
 
 1. **PageHero.** Eyebrow "Contact". h1 "Got questions? Hit us up." Lead: "Have questions about Fort Wayne Storm Lacrosse? We'd love to hear from you."
-2. **Links.** A large green email link card: "Email us" plus the address, using `overflow-wrap: anywhere`. Two outline cards for Facebook and Instagram.
+2. **Links.** A large green email link card: "Email us" plus the address, using `overflow-wrap: anywhere`. One outline card for Facebook.
 3. **Note.** "Already registered? Team updates, schedule changes and game info go out through the GameChanger app."
 4. `Footer compact`.
 
@@ -257,7 +257,7 @@ The logo is ready to use. The hero photo is too small for the new layout, and th
 - New headlines: "Bring the Storm.", "Love the game. Build the skills.", "Three teams. One Storm.", "Gear up.", "The next level.", "Got questions? Hit us up." and others listed in Page-by-page build.
 - "No experience needed" appears on Home (it is on the call-out flyer and matches the site's "all experience levels" line).
 - The Equipment heading typo "maintiain" goes away with the new copy.
-- Instagram is added to every footer. Today it appears only on Contact.
+- Facebook is added to every footer. (No Instagram: the club has no account.)
 - Long home-page paragraphs are condensed into the Who we are section and its three cards. Nothing factual is dropped.
 
 ## Work sequence
@@ -317,6 +317,6 @@ All six open questions were answered on Nov 6, 2026. Nothing blocks any phase.
 | Photos | Jared adds photos after the redesign launches | Launch with `storm-game.jpg` in the hero and the photo strip hidden. Adding the photos later is a follow-up PR. |
 | Maps embeds | Drop them | Remove both Google Maps iframes from Schedule and keep only the map link buttons. |
 | Location name | Keep the site's current wording | "PSM Empowered" and "Perry Hill Elementary", no street addresses. |
-| Contact staff | Don't list staff for now | Change the Contact description in `seo.js` to: "Contact the Fort Wayne Storm youth boys lacrosse program by email, or follow the team on Facebook and Instagram." |
+| Contact staff | Don't list staff for now | Change the Contact description in `seo.js` to: "Contact the Fort Wayne Storm youth boys lacrosse program by email, or follow the team on Facebook." |
 | USA Lacrosse logo | Keep it, so parents know the membership link is the official site | Show the logo on a white chip in the membership step on Home and Registration. |
 | Headlines | Approved | Use the copy in Page-by-page build as written. |

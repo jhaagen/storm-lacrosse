@@ -85,7 +85,6 @@ export const vendors = [
 export const contact = {
   email: 'fwstormlacrosse@outlook.com',
   facebook: 'https://www.facebook.com/fortwaynestormlacrosse',
-  instagram: 'https://www.instagram.com/fortwaynestormlacrosse',
 };
 
 // Home photo strip. The section renders only when all three exist, each with alt text:
