@@ -1,0 +1,29 @@
+// Design tokens for the Storm redesign. Use these, nothing else.
+:root {
+  --storm-bg: #0a0a0a;
+  --storm-ink: #000000;
+  --storm-surface: #141414;
+  --storm-rule: #262626;
+  --storm-border: #2e2e2e;
+  --storm-green: #00DA00;
+  --storm-green-hover: #5CFF5C;
+  --storm-paper: #F2F2EE;
+
+  --text: #ffffff;
+  --text-body: #d4d4d4;
+  --text-muted: #a3a3a3;
+
+  --paper-text: #0a0a0a;
+  --paper-body: #2b2b2b;
+  --paper-eyebrow: #3d3d3d;
+
+  --font-display: 'Anton', Impact, 'Arial Narrow', sans-serif;
+  --font-label: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', system-ui, sans-serif;
+
+  --max-width: 1280px;
+  --pad-x: clamp(20px, 4vw, 48px);
+  --pad-y: clamp(72px, 9vw, 128px);
+  --angle: 56px;
+  --cut: 36px;
+}

@@ -1,69 +1,108 @@
 import React from 'react';
-import Banner from '../components/banner';
-import Navbar from '../components/navbar';
-import CTA from '../components/cta';
+import Eyebrow from '../components/Eyebrow';
+import PageHero from '../components/PageHero';
+import Section from '../components/Section';
+import StepsList from '../components/StepsList';
+import { feeCovers, fees, teams } from '../data/season';
 
 function Registration() {
-    return (
-      <div className='App'>
-        <header>
-          <Banner></Banner>
-        </header>
-        <Navbar></Navbar>
+  return (
+    <>
+      <PageHero
+        eyebrow="Spring 2027 · 10U · 12U · 14U"
+        title={<><span className="line">Registration</span>{' '}<span className="line">is <span className="text-green">open.</span></span></>}
+        lead="Teams are capped so playing time isn't diluted. Lock in your spot and the early rate before December 31."
+        outlineWord="2027"
+      />
 
-        <div className='container'> 
-            <h2>Spring 2027 Registration</h2>
-            <p>Registration is open for the 2027 spring season. We are looking to fill 3 teams: 10U, 12U and 14U. We will be capping each team to ensure we have enough players, but not too many that playing time is an issue. </p>
-            <p>To register please fill out the Registration form, as well as the Medical form.</p>
-            <ul>
-              <li>Registration: <a className='button' href="https://forms.gle/54TY9wYb4fy1861YA">Registration Form</a>
+      <Section tone="green" className="reg-price">
+        <div className="row">
+          <div className="col">
+            <div className="reg-price__pair">
+              <p className="reg-price__item">
+                <span className="eyebrow">Through {fees.earlyDeadline}</span>
+                <span className="display reg-price__early">${fees.early}</span>
+              </p>
+              <p className="reg-price__item">
+                <span className="eyebrow">From {fees.regularStart}</span>
+                <span className="display reg-price__regular">${fees.regular}</span>
+              </p>
+            </div>
+            <p className="reg-price__covers">Per player. Your fee covers:</p>
+            <ul className="plain-list reg-price__list">
+              {feeCovers.map((item, index) => (
+                <li key={item}>
+                  <span className="reg-price__num" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                  {item}
                 </li>
-                <li>
-                Medical: <a className='button' href="https://forms.gle/FLANqquahxuuLZNHA">Medical Release Form</a>
-                </li>
-            </ul>            
-            <br />
-            <h2>Cost</h2>
-              <p>The cost for the 2027 spring season is $375 per child if registered by December 31, 2026. Beginning January 1, 2027, the cost will be $400 per child. This includes winter training (January - March), outdoor practices (March-ish - May), and around 10 spring games.</p>
-              <p>Each player is also required to hold a valid USA Lacrosse membership. Those can be obtained at the <a rel="noreferrer" target="_blank" href="https://www.usalacrosse.com/membership">USA Lacrosse</a> website for $35.</p>
-              <br/>
-              <img 
-                src="/assets/usa-lacrosse.png" 
-                alt="USA Lacrosse Membership Logo" 
-                loading="lazy"
-                width="200"
-                height="100"
-              />
-
-                          
-            <h2>Team Birthdate Ranges</h2>
-            <p>
-            10U (birthdates 9/1/16 - 8/31/18)
-            <br /><br />
-            12U (birthdates 9/1/14 - 8/31/16)
-            <br /><br />
-            14U (birthdates 9/1/12 - 8/31/14)
-            <br />[through 8th grade]
-            </p>
-            <h2>Expectations</h2>
-            <h3>Parent Expectations</h3>
-             <p>All club information is communicated through GameChanger, a smartphone app. Please stay informed of Club activities, games and practices by checking Gamechanger regularly. We recommend you sign up ALL the email addresses for members who need to get information (Athlete, Mom, Dad, Guardian).
-              </p>
-              <p>All parents/guardians are expected to volunteer at games. As a club sport we rely 100% on volunteers for all management functions on and off the field. Your help is vital to ensuring our athletes have the opportunity to participate in the Club.
-              </p>
-              <h3>Parent Behavior</h3>
-              <p>Parents will remain in the team's spectator area (behind the fence on the outer perimeter of the track) during games.
-              </p>
-              <p>There is absolutely no coaching from the sidelines by parents at games. This confuses athletes and sometimes even undermines what a coach is trying to do.
-              </p>
-              <p>There is no criticizing of athletes (even if they are your own athlete), referees, or other adults. Poor sideline behavior sends the wrong message to others about our Club. It will not be tolerated. 
-            </p>
-
-            <CTA>
-            </CTA>
+              ))}
+            </ul>
+          </div>
+          <div className="col">
+            <h2 className="display reg-price__title">Complete all three</h2>
+            <StepsList withSublabels />
+          </div>
         </div>
-      </div>
-        )
-    }
-;
+      </Section>
+
+      <Section className="birthdates">
+        <Eyebrow>Find your team</Eyebrow>
+        <h2 className="display h2-section">Birthdate ranges</h2>
+        <div className="birthdates__region" role="region" aria-label="Birthdate ranges by team" tabIndex="0">
+          <table className="birthdates__table">
+            <thead>
+              <tr>
+                <th scope="col">Team</th>
+                <th scope="col">Born on or after</th>
+                <th scope="col">Born on or before</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              {teams.map((team) => (
+                <tr key={team.name}>
+                  <th scope="row">{team.name}</th>
+                  <td>{team.start}</td>
+                  <td>{team.end}</td>
+                  <td>{team.note || ''}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
+      <Section tone="paper" angle="top" className="parents">
+        <div className="row">
+          <div className="col">
+            <Eyebrow>For parents</Eyebrow>
+            <h2 className="display h2-section">
+              <span className="line">What we</span>{' '}
+              <span className="line">count on.</span>
+            </h2>
+            <div className="parents__item">
+              <h3 className="parents__title">Watch GameChanger</h3>
+              <p>All club communication goes through the GameChanger app. Check it often and add every email address in your family.</p>
+            </div>
+            <div className="parents__item">
+              <h3 className="parents__title">Volunteer at games</h3>
+              <p>The club relies 100% on volunteers to run. Every family is expected to help out on game days.</p>
+            </div>
+          </div>
+          <div className="col">
+            <div className="parents__code cut-corner">
+              <h3 className="display parents__code-title">The sideline <span className="text-green">code</span></h3>
+              <ol className="parents__rules">
+                <li>Parents watch from the spectator area behind the outer fence.</li>
+                <li>No coaching from the sidelines. Let the coaches coach.</li>
+                <li>Criticizing athletes, referees or other adults is not tolerated.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
+}
+
 export default Registration;
