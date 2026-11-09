@@ -16,7 +16,7 @@ export const fees = {
 export const feeCovers = [
   'Winter training, January to March',
   'Outdoor practices, March to May',
-  'About 10 spring games',
+  'About 10 spring games and a tournament',
 ];
 
 export const links = {

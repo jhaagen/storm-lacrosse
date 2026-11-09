@@ -56,7 +56,7 @@ function Schedule() {
           <div className="col">
             <div className="gameday__stat">
               <span className="display gameday__big" aria-hidden="true">~10</span>
-              <p className="gameday__label">About 10 spring games, plus tournaments</p>
+              <p className="gameday__label">About 10 spring games, plus a tournament</p>
             </div>
           </div>
         </div>

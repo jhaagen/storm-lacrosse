@@ -10,7 +10,7 @@ import { areaTeams, fees, links, photos, practices, teams } from '../data/season
 const BAND_ITEMS = ['Grades 3–8', '10U · 12U · 14U', 'No experience needed', 'Travel team'];
 
 const WHO_CARDS = [
-  { title: 'Travel team', body: 'We compete beyond Fort Wayne, with tournaments and league games all spring.' },
+  { title: 'Travel team', body: 'We play right here in the Fort Wayne, Indy and South Bend area, with league games all spring and a tournament.' },
   { title: 'Volunteer coaches', body: "Storm is run by volunteers who know the game and are invested in every player's success." },
   { title: 'Every level', body: "Seasoned player or first time picking up a stick, there's a place for you here." },
 ];
@@ -115,7 +115,7 @@ function Home() {
           <li className="season__col season__col--accent">
             <p className="display season__big" aria-hidden="true">Game</p>
             <h3 className="season__title">Spring games</h3>
-            <p>About 10 spring games plus tournaments. The 2027 game schedule is coming soon on GameChanger.</p>
+            <p>About 10 spring games plus a tournament. The 2027 game schedule is coming soon on GameChanger.</p>
           </li>
         </ul>
       </Section>

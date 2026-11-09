@@ -13,7 +13,7 @@ function RegisterBlock() {
           <p className="display register-block__price">${fees.early}</p>
           <p className="register-block__deadline">Per player if you register by {fees.earlyDeadline}</p>
           <p className="register-block__detail">
-            ${fees.regular} starting {fees.regularStartLong}. Covers winter training, outdoor practices and about 10 spring games.
+            ${fees.regular} starting {fees.regularStartLong}. Covers winter training, outdoor practices, about 10 spring games and a tournament.
           </p>
         </div>
         <div className="col">
